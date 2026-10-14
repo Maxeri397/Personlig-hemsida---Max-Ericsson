@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Canvas Background (Deep Vintage Maroon) -->
+  <rect width="800" height="500" fill="#24070C"/>
+
+  <!-- Subtle Vintage Hairline Grid -->
+  <g opacity="0.2" stroke="#5E1822" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="500"/>
+    <line x1="760" y1="0" x2="760" y2="500"/>
+    <line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="460" x2="800" y2="460"/>
+  </g>
+
+  <!-- Editorial Plate Outer Mat -->
+  <rect x="50" y="40" width="700" height="420" fill="#300B12" stroke="#541620" stroke-width="1.5"/>
+  
+  <!-- Plate Header Bar -->
+  <rect x="50" y="40" width="700" height="42" fill="#22060A" stroke="#541620" stroke-width="1.5"/>
+  <text x="75" y="66" font-family="'Space Mono', monospace, sans-serif" font-size="11" font-weight="700" fill="#E7D5C3" letter-spacing="1.5">✦ PLÅT III — WEBBSTRUKTUR: SEMANTISK HTML5 &amp; CSS3</text>
+  <text x="725" y="66" text-anchor="end" font-family="'Space Mono', monospace, sans-serif" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">HANDKODAT PORTFOLIO</text>
+
+  <!-- Left: Code snippet editorial box -->
+  <g transform="translate(80, 110)">
+    <rect x="0" y="0" width="340" height="315" fill="#1C0508" stroke="#4C141C" stroke-width="1"/>
+    
+    <text x="24" y="38" font-family="'Space Mono', monospace" font-size="12" fill="#F6ECE1">&lt;<tspan fill="#E7D5C3">header class="masthead"</tspan>&gt;</text>
+    <text x="44" y="66" font-family="'Space Mono', monospace" font-size="12" fill="#F6ECE1">&lt;<tspan fill="#E7D5C3">h1</tspan>&gt;Max Ericsson&lt;/<tspan fill="#E7D5C3">h1</tspan>&gt;</text>
+    <text x="44" y="94" font-family="'Space Mono', monospace" font-size="12" fill="#CBB6A2">&lt;p&gt;Digital Marketing Specialist&lt;/p&gt;</text>
+    <text x="24" y="122" font-family="'Space Mono', monospace" font-size="12" fill="#F6ECE1">&lt;/<tspan fill="#E7D5C3">header</tspan>&gt;</text>
+    
+    <line x1="24" y1="145" x2="316" y2="145" stroke="#3D1018" stroke-width="1" stroke-dasharray="3 3"/>
+    
+    <text x="24" y="175" font-family="'Space Mono', monospace" font-size="12" fill="#F6ECE1">&lt;<tspan fill="#E7D5C3">section</tspan> id="kompetenser"&gt;</text>
+    <text x="44" y="203" font-family="'Space Mono', monospace" font-size="11" fill="#9D8776">/* SEO, SEM, GA4 &amp; Social */</text>
+    <text x="44" y="231" font-family="'Space Mono', monospace" font-size="12" fill="#E7D5C3">&lt;article class="editorial-case"&gt;</text>
+    <text x="64" y="259" font-family="'Space Mono', monospace" font-size="11" fill="#F6ECE1">100% Responsiv &amp; Snabb</text>
+    <text x="44" y="285" font-family="'Space Mono', monospace" font-size="12" fill="#E7D5C3">&lt;/article&gt;</text>
+  </g>
+
+  <!-- Right: Editorial Quality Highlights -->
+  <g transform="translate(445, 110)">
+    <rect x="0" y="0" width="265" height="150" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
+    <text x="22" y="32" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">WEBBSTANDARD &amp; KOD</text>
+    <text x="22" y="72" font-family="'Fraunces', Georgia, serif" font-size="38" font-weight="800" fill="#E7D5C3">100%</text>
+    <text x="22" y="98" font-family="'Fraunces', Georgia, serif" font-size="14" font-weight="700" fill="#F6ECE1">Semantisk HTML5</text>
+    <text x="22" y="122" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Strukturerad för sökmotorer &amp; blixtsnabb laddtid.</text>
+
+    <rect x="0" y="165" width="265" height="150" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
+    <text x="22" y="197" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">ESTETIK &amp; TYPOGRAFI</text>
+    <text x="22" y="232" font-family="'Fraunces', Georgia, serif" font-size="17" font-weight="700" fill="#F6ECE1">Vintage Editorial Print</text>
+    <text x="22" y="258" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Djup vinröd bas med antikvit &amp; varm beige typografi.</text>
+    <text x="22" y="288" font-family="'Space Mono', monospace" font-size="10.5" font-weight="700" fill="#E7D5C3">Laddtid: &lt; 0.4s</text>
+  </g>
+</svg>

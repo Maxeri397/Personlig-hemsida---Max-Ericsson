@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Canvas Background (Deep Vintage Maroon) -->
+  <rect width="800" height="500" fill="#24070C"/>
+
+  <!-- Subtle Vintage Hairline Grid -->
+  <g opacity="0.2" stroke="#5E1822" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="500"/>
+    <line x1="760" y1="0" x2="760" y2="500"/>
+    <line x1="0" y1="40" x2="800" y2="40"/>
+    <line x1="0" y1="460" x2="800" y2="460"/>
+  </g>
+
+  <!-- Editorial Plate Outer Mat -->
+  <rect x="50" y="40" width="700" height="420" fill="#300B12" stroke="#541620" stroke-width="1.5"/>
+  
+  <!-- Plate Header Bar -->
+  <rect x="50" y="40" width="700" height="42" fill="#22060A" stroke="#541620" stroke-width="1.5"/>
+  <text x="75" y="66" font-family="'Space Mono', monospace, sans-serif" font-size="11" font-weight="700" fill="#E7D5C3" letter-spacing="1.5">✦ PLÅT II — INNEHÅLLSSTRATEGI &amp; KANALPLAN</text>
+  <text x="725" y="66" text-anchor="end" font-family="'Space Mono', monospace, sans-serif" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">IHM CASE 2026</text>
+
+  <!-- Section Subtitle inside graphic -->
+  <g transform="translate(80, 112)">
+    <text x="0" y="16" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#F6ECE1">KAMPANJ: Hållbar Kaffeprenumeration</text>
+    <text x="0" y="38" font-family="'Space Mono', monospace, sans-serif" font-size="11" fill="#CBB6A2">FORMATSTRUKTUR: INSTAGRAM REELS · TIKTOK · NYHETSBREV</text>
+  </g>
+
+  <!-- 3 Editorial Content Columns -->
+  <g transform="translate(80, 175)">
+    <!-- Column 1 -->
+    <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
+    <rect x="18" y="18" width="95" height="22" fill="#3D1018" stroke="#681F2B" stroke-width="1"/>
+    <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">INSTAGRAM</text>
+    <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Bakom kulisserna</text>
+    <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Kaffebönans resa från gård till morgonkopp.</text>
+    <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
+    <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Format: Reel (9:16)</text>
+    <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">CTA: Länk i bio</text>
+    <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Trafik till sajt</text>
+
+    <!-- Column 2 (Highlighted with Beige accent) -->
+    <g transform="translate(220, 0)">
+      <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#E7D5C3" stroke-width="1.5"/>
+      <rect x="18" y="18" width="75" height="22" fill="#E7D5C3"/>
+      <text x="55" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#24070C">TIKTOK</text>
+      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">3 Baristatips</text>
+      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Enkla knep för godare morgonkaffe hemma.</text>
+      <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
+      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Format: Snabb guide</text>
+      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Hook: Gör inte så här</text>
+      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Stor räckvidd</text>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(440, 0)">
+      <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
+      <rect x="18" y="18" width="95" height="22" fill="#3D1018" stroke="#681F2B" stroke-width="1"/>
+      <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">NYHETSBREV</text>
+      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Provsmakning</text>
+      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Välkomsterbjudande till nya prenumeranter.</text>
+      <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
+      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Segment: Nya leads</text>
+      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Öppningsgrad: 44.8%</text>
+      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Konvertering</text>
+    </g>
+  </g>
+</svg>

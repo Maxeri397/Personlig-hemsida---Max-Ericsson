@@ -1,0 +1,790 @@
+/* ==========================================================================
+   MAX ERICSSON — DIGITAL MARKETING SPECIALIST
+   Authentic 70s Editorial & Vintage Print Design
+   Inspired by Sunwave, Dazed & Typographic Print Publications
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* Authentic Vintage Velvet Maroon Palette (Inspired by Maroon & Sunwave) */
+    --bg-maroon-canvas: #25080E;
+    --bg-maroon-plate:  #2F0B13;
+    --bg-maroon-card:   #360E16;
+    --bg-maroon-dark:   #1C0408;
+
+    /* Warm Parchment, Cream & Antique Beige Typography (No red text!) */
+    --text-cream:       #F7EFE6;
+    --text-beige:       #E8D6C4;
+    --text-sand:        #CDB8A5;
+    --text-muted:       #9E8877;
+    --text-ochre:       #DFBA94;
+
+    /* Vintage Hairlines & Double Rules */
+    --border-hairline:  rgba(247, 239, 230, 0.16);
+    --border-subtle:    rgba(247, 239, 230, 0.28);
+    --border-warm:      #E8D6C4;
+    --border-plate:     #521722;
+
+    /* Vintage Typography System */
+    --font-serif:       'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-sans:        'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono:        'Space Mono', Courier, monospace;
+
+    --transition:       all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Base & Reset --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: var(--bg-maroon-canvas);
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-maroon-canvas);
+    color: var(--text-beige);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* --- Tactile Analog Film/Paper Grain Overlay ---
+   Eliminates flat digital AI screen feel and gives authentic archival print warmth */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Subtle Warm Tungsten Vignette */
+body::after {
+    content: '';
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(223, 186, 148, 0.05) 0%, rgba(37, 8, 14, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- Typography Defaults --- */
+h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    color: var(--text-cream);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    font-variation-settings: 'SOFT' 100, 'WONK' 1;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+}
+
+h2 {
+    font-size: clamp(2.1rem, 4vw, 3.1rem);
+    margin-bottom: 1.4rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text-cream);
+}
+
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: var(--text-sand);
+}
+
+strong {
+    color: var(--text-cream);
+    font-weight: 700;
+}
+
+a {
+    color: var(--text-cream);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* --- Layout Wrappers --- */
+.vintage-folio,
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+header,
+main,
+footer {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- Top Folio Strip (Vintage Magazine Header) --- */
+.vintage-folio {
+    border-bottom: 1px solid var(--border-hairline);
+    background: var(--bg-maroon-dark);
+    padding: 0.55rem 2rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-sand);
+}
+
+.vintage-folio-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vintage-folio-inner span:last-child {
+    color: var(--text-cream);
+    font-weight: 700;
+}
+
+/* --- Masthead & Header --- */
+header {
+    border-bottom: 3px double var(--border-subtle);
+    padding: 3.2rem 2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.brand h1 {
+    font-size: clamp(2.4rem, 4.8vw, 3.5rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--text-cream);
+    line-height: 1;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+.brand-subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-sand);
+    font-weight: 600;
+    margin-top: 0.65rem;
+    margin-bottom: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+nav a {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-sand);
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1.5px solid transparent;
+    transition: var(--transition);
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--text-cream);
+    border-bottom-color: var(--text-beige);
+}
+
+.nav-contact-pill {
+    border: 1.5px solid var(--text-beige) !important;
+    border-radius: 999px;
+    padding: 0.45rem 1.2rem !important;
+    color: var(--text-cream) !important;
+    background: transparent;
+}
+
+.nav-contact-pill:hover {
+    background: var(--text-beige);
+    color: var(--bg-maroon-canvas) !important;
+    border-bottom-color: var(--text-beige) !important;
+}
+
+/* --- Section Formatting & Tags --- */
+section {
+    padding: 5.5rem 0;
+    border-bottom: 1px solid var(--border-hairline);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+.section-tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-ochre);
+    margin-bottom: 1.1rem;
+    border-bottom: 1px solid var(--border-hairline);
+    padding-bottom: 3px;
+}
+
+.section-header {
+    max-width: 720px;
+    margin-bottom: 3.5rem;
+}
+
+.section-desc {
+    font-size: 1.15rem;
+    color: var(--text-sand);
+    margin-top: 0.5rem;
+}
+
+/* --- Hero Section (#intro) --- */
+#intro {
+    padding: 6.5rem 0 5.5rem;
+    max-width: 960px;
+}
+
+.vintage-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-cream);
+    background: rgba(232, 214, 196, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    margin-bottom: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+#intro h2 {
+    font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.12;
+    color: var(--text-cream);
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+.hero-lead {
+    font-size: 1.25rem;
+    color: var(--text-sand);
+    line-height: 1.8;
+    margin-bottom: 2.8rem;
+    max-width: 820px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.btn-vintage-solid {
+    background: var(--text-beige);
+    color: var(--bg-maroon-canvas) !important;
+    padding: 0.9rem 1.9rem;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1.5px solid var(--text-beige);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.btn-vintage-solid:hover {
+    background: var(--text-cream);
+    border-color: var(--text-cream);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.btn-vintage-outline {
+    background: transparent;
+    border: 1.5px solid var(--border-subtle);
+    color: var(--text-cream) !important;
+    padding: 0.9rem 1.9rem;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.btn-vintage-outline:hover {
+    border-color: var(--text-beige);
+    color: var(--text-beige) !important;
+    background: rgba(232, 214, 196, 0.04);
+    transform: translateY(-2px);
+}
+
+/* Vintage Editorial Registration Strip */
+.vintage-meta-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 2rem;
+    margin-top: 4.8rem;
+    padding-top: 2.2rem;
+    border-top: 3px double var(--border-subtle);
+}
+
+.meta-col .meta-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.meta-col .meta-val {
+    font-family: var(--font-serif);
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--text-cream);
+}
+
+/* --- Om mig Section (#om) --- */
+#om {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.om-media {
+    position: sticky;
+    top: 5rem;
+}
+
+/* Vintage Print Photo Card (Polaroid/Framed archival print) */
+.vintage-photo-frame {
+    background: var(--bg-maroon-plate);
+    border: 1px solid var(--border-subtle);
+    padding: 14px 14px 18px 14px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.photo-inner {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    background: #000;
+    border: 1px solid rgba(247, 239, 230, 0.12);
+}
+
+.photo-inner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    filter: contrast(1.05) saturate(0.96) sepia(0.08);
+}
+
+.photo-caption {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-sand);
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.om-content h2 {
+    font-size: clamp(2.4rem, 4.2vw, 3.2rem);
+    margin-bottom: 1.6rem;
+}
+
+.om-content p {
+    font-size: 1.1rem;
+    color: var(--text-sand);
+    line-height: 1.85;
+}
+
+/* Authentic Vintage Drop Cap for the lead paragraph */
+.has-dropcap::first-letter {
+    font-family: var(--font-serif);
+    float: left;
+    font-size: 3.8rem;
+    line-height: 0.78;
+    padding-right: 0.65rem;
+    padding-top: 0.15rem;
+    color: var(--text-cream);
+    font-weight: 900;
+    font-variation-settings: 'SOFT' 100, 'WONK' 1;
+}
+
+/* Editorial Vintage Pullquote */
+.vintage-pullquote {
+    border-top: 3px double var(--border-subtle);
+    border-bottom: 3px double var(--border-subtle);
+    padding: 2rem 1.6rem;
+    margin: 2.6rem 0;
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--text-cream);
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+    background: rgba(232, 214, 196, 0.02);
+}
+
+/* --- Mina kompetenser Section (#kompetenser) --- */
+#kompetenser ul.comp-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 3.5rem;
+}
+
+#kompetenser li {
+    border-top: 1px solid var(--border-hairline);
+    padding-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-num {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: var(--text-ochre);
+    letter-spacing: 0.14em;
+    margin-bottom: 0.7rem;
+}
+
+#kompetenser li h3 {
+    font-family: var(--font-serif);
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--text-cream);
+    margin-bottom: 0.85rem;
+    line-height: 1.25;
+}
+
+#kompetenser li p {
+    font-size: 1.02rem;
+    color: var(--text-sand);
+    line-height: 1.75;
+    margin-bottom: 1.6rem;
+    flex-grow: 1;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.skill-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-sand);
+    border: 1px solid var(--border-hairline);
+    background: rgba(247, 239, 230, 0.03);
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+}
+
+/* --- Projekt & Case Section (#projekt) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 2.5rem;
+}
+
+article.project-card {
+    border: 1px solid var(--border-hairline);
+    background: var(--bg-maroon-plate);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: var(--transition);
+}
+
+article.project-card:hover {
+    border-color: var(--text-beige);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.article-thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--bg-maroon-dark);
+    border-bottom: 1px solid var(--border-hairline);
+}
+
+article.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+article.project-card:hover img {
+    transform: scale(1.02);
+}
+
+.article-body {
+    padding: 2.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-focus-tag {
+    font-family: var(--font-mono);
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-ochre);
+    margin-bottom: 0.7rem;
+}
+
+article.project-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    margin-bottom: 0.85rem;
+    color: var(--text-cream);
+}
+
+article.project-card p {
+    font-size: 1rem;
+    color: var(--text-sand);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* --- Kontakt Section (#kontakt) --- */
+#kontakt {
+    padding: 6.5rem 0;
+}
+
+.vintage-contact-box {
+    border: 3px double var(--border-subtle);
+    padding: 4.5rem 3.5rem;
+    background: var(--bg-maroon-plate);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+#kontakt h2 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    color: var(--text-cream);
+    margin-bottom: 1.4rem;
+    max-width: 820px;
+}
+
+.contact-intro {
+    font-size: 1.25rem;
+    color: var(--text-sand);
+    margin-bottom: 3.2rem;
+    max-width: 680px;
+}
+
+.contact-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.8rem;
+}
+
+.contact-card {
+    border: 1px solid var(--border-hairline);
+    padding: 2.2rem 1.8rem;
+    background: var(--bg-maroon-canvas);
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    border-color: var(--text-beige);
+    transform: translateY(-2px);
+}
+
+.contact-card h4 {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.contact-card a,
+.contact-card span {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-cream);
+    word-break: break-all;
+}
+
+.contact-card a:hover {
+    color: var(--text-beige);
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 3.5rem 2rem 5rem;
+    border-top: 3px double var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    gap: 1.5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+}
+
+footer a {
+    color: var(--text-sand);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: var(--text-cream);
+    text-decoration: underline;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 860px) {
+    #om {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    
+    .om-media {
+        position: relative;
+        top: 0;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.9rem;
+    }
+
+    #kompetenser ul.comp-list {
+        grid-template-columns: 1fr;
+        gap: 2.8rem;
+    }
+
+    .vintage-contact-box {
+        padding: 3rem 1.8rem;
+    }
+
+    section {
+        padding: 4.5rem 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .vintage-folio-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-vintage-solid,
+    .btn-vintage-outline {
+        justify-content: center;
+    }
+}
