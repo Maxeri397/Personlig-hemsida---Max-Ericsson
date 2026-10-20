@@ -15,13 +15,13 @@
   
   <!-- Plate Header Bar -->
   <rect x="50" y="40" width="700" height="42" fill="#22060A" stroke="#541620" stroke-width="1.5"/>
-  <text x="75" y="66" font-family="'Space Mono', monospace, sans-serif" font-size="11" font-weight="700" fill="#E7D5C3" letter-spacing="1.5">✦ PLÅT II — INNEHÅLLSSTRATEGI &amp; KANALPLAN</text>
-  <text x="725" y="66" text-anchor="end" font-family="'Space Mono', monospace, sans-serif" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">IHM CASE 2026</text>
+  <text x="75" y="66" font-family="'Space Mono', monospace, sans-serif" font-size="11" font-weight="700" fill="#E7D5C3" letter-spacing="1.5">✦ PLÅT II — DIGITAL NÄRVARO FÖR ETT BAND</text>
+  <text x="725" y="66" text-anchor="end" font-family="'Space Mono', monospace, sans-serif" font-size="10" font-weight="700" fill="#9D8776" letter-spacing="1">SAMARBETE 2026</text>
 
   <!-- Section Subtitle inside graphic -->
   <g transform="translate(80, 112)">
-    <text x="0" y="16" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#F6ECE1">KAMPANJ: Hållbar Kaffeprenumeration</text>
-    <text x="0" y="38" font-family="'Space Mono', monospace, sans-serif" font-size="11" fill="#CBB6A2">FORMATSTRUKTUR: INSTAGRAM REELS · TIKTOK · NYHETSBREV</text>
+    <text x="0" y="16" font-family="'Fraunces', Georgia, serif" font-size="20" font-weight="700" fill="#F6ECE1">WEBB, INNEHÅLL &amp; SYNGLIGHET</text>
+    <text x="0" y="38" font-family="'Space Mono', monospace, sans-serif" font-size="11" fill="#CBB6A2">FORMATSTRUKTUR: HEMSIDA · SOCIALA MEDIER · LANSERING</text>
   </g>
 
   <!-- 3 Editorial Content Columns -->
@@ -29,38 +29,38 @@
     <!-- Column 1 -->
     <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
     <rect x="18" y="18" width="95" height="22" fill="#3D1018" stroke="#681F2B" stroke-width="1"/>
-    <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">INSTAGRAM</text>
-    <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Bakom kulisserna</text>
-    <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Kaffebönans resa från gård till morgonkopp.</text>
+    <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">HEMSIDA</text>
+    <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Bandets uttryck</text>
+    <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">En tydlig plats för musik, datum och bandets berättelse.</text>
     <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
-    <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Format: Reel (9:16)</text>
-    <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">CTA: Länk i bio</text>
-    <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Trafik till sajt</text>
+    <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Fokus: Struktur &amp; design</text>
+    <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">CTA: Lyssna nu</text>
+    <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Tydlig närvaro</text>
 
     <!-- Column 2 (Highlighted with Beige accent) -->
     <g transform="translate(220, 0)">
       <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#E7D5C3" stroke-width="1.5"/>
       <rect x="18" y="18" width="75" height="22" fill="#E7D5C3"/>
-      <text x="55" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#24070C">TIKTOK</text>
-      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">3 Baristatips</text>
-      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Enkla knep för godare morgonkaffe hemma.</text>
+      <text x="55" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#24070C">SOCIALT</text>
+      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Innehållsidéer</text>
+      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Inlägg som bygger intresse inför musik och spelningar.</text>
       <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
-      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Format: Snabb guide</text>
-      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Hook: Gör inte så här</text>
-      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Stor räckvidd</text>
+      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Format: Video &amp; bild</text>
+      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Fokus: Bandets personlighet</text>
+      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Engagemang</text>
     </g>
 
     <!-- Column 3 -->
     <g transform="translate(440, 0)">
       <rect x="0" y="0" width="200" height="255" fill="#22060A" stroke="#4C141C" stroke-width="1"/>
       <rect x="18" y="18" width="95" height="22" fill="#3D1018" stroke="#681F2B" stroke-width="1"/>
-      <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">NYHETSBREV</text>
-      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Provsmakning</text>
-      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Välkomsterbjudande till nya prenumeranter.</text>
+      <text x="65" y="33" text-anchor="middle" font-family="'Space Mono', monospace, sans-serif" font-size="9" font-weight="700" fill="#F6ECE1">LANSERING</text>
+      <text x="18" y="70" font-family="'Fraunces', Georgia, serif" font-size="16" font-weight="700" fill="#F6ECE1">Nå ut till fler</text>
+      <text x="18" y="94" font-family="-apple-system, sans-serif" font-size="11.5" fill="#CBB6A2">Samlad plan för att driva trafik till bandets digitala kanaler.</text>
       <rect x="18" y="138" width="164" height="85" fill="#1A0508" stroke="#3D1018" stroke-width="1"/>
-      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Segment: Nya leads</text>
-      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Öppningsgrad: 44.8%</text>
-      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Konvertering</text>
+      <text x="28" y="162" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#F6ECE1">Mätning: Klick &amp; räckvidd</text>
+      <text x="28" y="184" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" fill="#CBB6A2">Länk: Bandets hemsida</text>
+      <text x="28" y="206" font-family="'Space Mono', monospace, sans-serif" font-size="10.5" font-weight="700" fill="#E7D5C3">Mål: Nya lyssnare</text>
     </g>
   </g>
 </svg>
